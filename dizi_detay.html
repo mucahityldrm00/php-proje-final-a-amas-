@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dizi Detay - E-DİZİ</title>
+    <style>
+        body { font-family: sans-serif; background-color: #0f0f11; color: white; margin: 0; animation: fadeIn 0.8s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        header { position: sticky; top: 0; z-index: 1000; background: rgba(26, 26, 31, 0.7); backdrop-filter: blur(12px); padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(212, 175, 55, 0.3); }
+        .logo { font-size: 24px; font-weight: bold; color: #d4af37; text-decoration: none; text-shadow: 0 0 10px rgba(212,175,55,0.3); }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+        .detail-box { max-width: 800px; margin: 50px auto; background: #1a1a1f; padding: 40px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2); text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .detail-box img { max-width: 300px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        
+        .yorum-formu input, .yorum-formu select, .yorum-formu textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(15,15,17,0.8); color: white; border: 1px solid #333; box-sizing: border-box; border-radius: 5px; outline: none; font-family: sans-serif; transition: 0.3s; }
+        .yorum-formu input:focus, .yorum-formu select:focus, .yorum-formu textarea:focus { border-color: #d4af37; }
+        .yorum-formu button { padding: 12px 25px; background: #d4af37; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; color: black; transition: 0.3s; }
+        .yorum-formu button:hover { background: #f1c40f; }
+        .btn-geri { display:inline-block; padding:10px 20px; background:#333; color:white; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:40px; transition:0.3s; }
+        .btn-geri:hover { background:#555; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">E-DİZİ</a>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="diziler.php">Diziler</a>
+            <a href="admin.php">Yönetim</a>
+        </nav>
+    </header>
+    <main class="detail-box">
+        <img src="<?php echo htmlspecialchars($dizi['resim']); ?>" alt="Afiş">
+        <h1 style="color:#d4af37;"><?php echo htmlspecialchars($dizi['ad']); ?></h1>
+        <p style="color:#a0a0a0;"><strong>Tür:</strong> <?php echo htmlspecialchars($dizi['tur']); ?> | <strong>Yıl:</strong> <?php echo htmlspecialchars($dizi['yil']); ?> | <strong>Puan:</strong> <span style="color:#d4af37;"><?php echo htmlspecialchars($dizi['puan']); ?></span></p>
+        
+        <hr style="border-color:rgba(212, 175, 55, 0.2); margin: 30px 0;">
+        <p style="font-size:16px; line-height: 1.8; text-align: left; color:#eee;"><?php echo nl2br(htmlspecialchars($dizi['detay'])); ?></p>
+        <hr style="border-color:rgba(212, 175, 55, 0.2); margin: 40px 0 20px 0;">
+        
+        <section style="text-align: left;">
+            <h2 style="color:#d4af37;">Kullanıcı Yorumları</h2>
+            <?php echo $yorumlar_html; ?>
+            
+            <h3 style="color:#d4af37; margin-top:50px;">Yorum Ekle ve Puanla</h3>
+            <form action="yorum_islem.php" method="POST" class="yorum-formu">
+                <input type="hidden" name="id" value="<?php echo $dizi_id; ?>">
+                <input type="text" name="isim" placeholder="Adınız" required>
+                
+                <select name="puan" required>
+                    <option value="5" selected>⭐⭐⭐⭐⭐ - Kusursuz</option>
+                    <option value="4">⭐⭐⭐⭐ - Çok İyi</option>
+                    <option value="3">⭐⭐⭐ - İyi</option>
+                    <option value="2">⭐⭐ - İdare Eder</option>
+                    <option value="1">⭐ - Kötü</option>
+                </select>
+
+                <textarea name="metin" rows="4" placeholder="Dizi hakkında ne düşünüyorsunuz?" required></textarea>
+                <button type="submit">Yorumu ve Yıldızları Gönder</button>
+            </form>
+        </section>
+
+        <a href="diziler.php" class="btn-geri">Geri Dön</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+[
+    {
+        "ad": "Breaking Bad",
+        "tur": "Suç, Drama",
+        "yil": 2008,
+        "puan": 9.5,
+        "resim": "breaking bad.jpg",
+        "detay": "Lise kimya öğretmeni Walter White'ın, ailesinin geleceğini güvence altına almak için eski öğrencisi Jesse Pinkman ile birlikte metamfetamin üretip satmaya başlamasıyla gelişen olaylar zinciri.",
+        "yorumlar": [
+            {
+                "isim": "Mücahit Yıldırım",
+                "metin": "etkileyici\r\n",
+                "puan": 4
+            }
+        ]
+    },
+    {
+        "ad": "Game of Thrones",
+        "tur": "Fantastik, Drama",
+        "yil": 2011,
+        "puan": 9.2,
+        "resim": "game of thrones.jpg",
+        "detay": "Yedi Krallık diyarı Westeros'ta, Demir Taht'ı ele geçirmek için asil aileler arasında yaşanan entrikalar, savaşlar ve Kuzey'den gelen unutulmuş bir tehdidin yükselişi.",
+        "yorumlar": []
+    },
+    {
+        "ad": "Vikings",
+        "tur": "Tarihi, Aksiyon",
+        "yil": 2013,
+        "puan": 8.5,
+        "resim": "vikingss.jpg",
+        "detay": "Sıradan bir çiftçi olan Ragnar Lothbrok'un, bitmek bilmeyen merakı ve hırsı sayesinde kardeşleri ve ailesiyle birlikte Viking kabilelerinin kralı olma yolculuğu.",
+        "yorumlar": []
+    },
+    {
+        "ad": "Prison Break",
+        "tur": "Aksiyon, Gerilim",
+        "yil": 2005,
+        "puan": 8.3,
+        "resim": "prison break.jpg",
+        "detay": "Michael Scofield'ın, işlemediği bir suçtan dolayı idam cezasına çarptırılan abisi Lincoln Burrows'u hapishaneden kaçırmak için yaptığı kusursuz ve akıl almaz plan.",
+        "yorumlar": []
+    },
+    {
+        "ad": "The Sopranos",
+        "tur": "Suç, Drama",
+        "yil": 1999,
+        "puan": 9.2,
+        "resim": "sporanos.jpg",
+        "detay": "New Jersey'li mafya babası Tony Soprano'un, hem suç ailesini yönetmeye çalışırken hem de kendi ailesiyle yaşadığı psikolojik ve kişisel krizleri konu alan efsanevi yapım.",
+        "yorumlar": []
+    },
+    {
+        "ad": "Elite",
+        "tur": "Dram, Gizem, Gençlik",
+        "yil": 2018,
+        "puan": 7.3,
+        "resim": "elite.webp",
+        "detay": "İşçi sınıfından gelen üç gencin, İspanya'nın en seçkin özel okuluna kaydolmasıyla başlayan; sınıf çatışmaları, kıskançlık ve gizemli bir cinayete uzanan hikaye.",
+        "yorumlar": []
+    },
+    {
+        "ad": "Kurtlar Vadisi Pusu",
+        "tur": "Aksiyon, Polisiye",
+        "yil": 2007,
+        "puan": 8,
+        "resim": "kurtlar vadisi.jpg",
+        "detay": "Polat Alemdar ve ekibinin, Türkiye üzerindeki küresel güçlerin, baronların ve gizli yapılanmaların oyunlarını bozmak için girdikleri karanlık ve amansız mücadele.",
+        "yorumlar": []
+    },
+    {
+        "ad": "Ezel",
+        "tur": "Dram, Gerilim, Suç",
+        "yil": 2009,
+        "puan": 8.7,
+        "resim": "ezel.jpg",
+        "detay": "En yakın arkadaşları ve sevdiği kadın tarafından tuzağa düşürülüp hapse atılan Ömer'in, yüzünü değiştirerek 'Ezel' adıyla geri dönüp aldığı kusursuz intikamın öyküsü.",
+        "yorumlar": []
+    },
+    {
+        "ad": "Lost",
+        "tur": "Macera, Gizem, Bilim Kurgu",
+        "yil": 2004,
+        "puan": 8.3,
+        "resim": "lost.jpg",
+        "detay": "Sidney-Los Angeles uçağının Güney Pasifik'teki gizemli bir adaya düşmesi sonucu hayatta kalan yolcuların, adanın doğaüstü sırlarıyla karşı karşıya kaldığı büyük hayatta kalma savaşı.",
+        "yorumlar": []
+    },
+    {
+        "ad": "La Casa de Papel",
+        "tur": "Suç, Soygun, Aksiyon",
+        "yil": 2017,
+        "puan": 8.2,
+        "resim": "la case.webp",
+        "detay": "Profesör lakaplı gizemli bir dehanın liderliğinde, tarihin en büyük soygununu gerçekleştirmek amacıyla İspanya Kraliyet Darphanesi'ne giren bir suç çetesinin nefes kesen operasyonu.",
+        "yorumlar": []
+    }
+]
